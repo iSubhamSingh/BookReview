@@ -48,7 +48,7 @@
                     <form:errors path="confirm"/>
                     </div>
                 </div>
-                <button class="btn"><input type="submit" value="register"></button>
+                <button class="btn"><input type="submit" value="Register"></button>
             </form:form>
         </div>
         <div class="col">
@@ -66,7 +66,7 @@
                         <form:errors path="password"/>
                     </div>
                 </div>
-                    <button class="btn"><input type="submit" value="login"></button>
+                    <button class="btn"><input type="submit" value="Login"></button>
                 </form:form>
         </div>
 
