@@ -68,7 +68,7 @@ h1 {
 }
 
 input {
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -80,7 +80,7 @@ input {
 }
 
 .btn, .submit {
-    display: flex;
+   
     justify-content: center;
     align-items: center;
     width: 150px;
