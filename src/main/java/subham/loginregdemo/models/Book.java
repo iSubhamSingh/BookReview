@@ -108,6 +108,10 @@ public class Book {
 
     public void update(Book book) {
     }
+    
+    public void modify() {
+    	
+    }
 
     
 }
