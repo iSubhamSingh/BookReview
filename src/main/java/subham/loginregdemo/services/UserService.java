@@ -30,6 +30,7 @@ public class UserService {
             return null;
         }
         
+        //check if password doesn't match then reject the values.
         if(!newUser.getPassword().equals(newUser.getConfirm())){
             result.rejectValue("confirm", "Confirm", "passwords must match");
             return null;
