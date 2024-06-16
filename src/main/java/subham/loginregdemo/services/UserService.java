@@ -69,17 +69,19 @@ public class UserService {
         return user;
     }
 
-    private boolean userRegistered(String email){
+    
+    private boolean userRegistered(String email){ 
         Optional<User> user = userRepository.findByEmail(email);
         return user.isPresent();
     }
     
+    // find user by email id
     private User findUserByEmail(String email){
         Optional<User> user = userRepository.findByEmail(email);
         return user.orElse(null);
 
     }
-
+    // find user by id
     public User findById(Long id) {
         Optional<User> user = userRepository.findById(id);
         return user.orElse(null);
