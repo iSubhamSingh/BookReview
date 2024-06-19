@@ -26,7 +26,7 @@ public class UserService {
         System.out.println(newUser);
         
         if(userRegistered(newUser.getEmail())){
-            result.rejectValue("email", "Email", "email taken");
+            result.rejectValue("email", "Email", "Email is already taken");
             return null;
         }
         
