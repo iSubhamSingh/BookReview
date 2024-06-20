@@ -27,7 +27,6 @@ public class HomeController {
     @GetMapping("/")
     public String index(Model model) {
     
-        
         model.addAttribute("newUser", new User());
         model.addAttribute("newLogin", new LoginUser());
         return "index.jsp";
@@ -35,9 +34,7 @@ public class HomeController {
     
     @PostMapping("/register")
     public String register(@Valid @ModelAttribute("newUser") User newUser, 
-            BindingResult result, Model model, HttpSession session) {
-        
-        
+        BindingResult result, Model model, HttpSession session) {
         System.out.println(newUser);
         User user = userService.register(newUser, result);
         if(result.hasErrors()) {
@@ -45,7 +42,6 @@ public class HomeController {
             model.addAttribute("newLogin", new LoginUser());
             return "index.jsp";
         }
-        
         
         session.setAttribute("userId", user.getId());
         session.setAttribute("userName", user.getUserName());
@@ -64,7 +60,7 @@ public class HomeController {
             return "index.jsp";
         }
         
-        // log in.
+        // log in. 
         session.setAttribute("userId", user.getId());
         session.setAttribute("user", user);
         

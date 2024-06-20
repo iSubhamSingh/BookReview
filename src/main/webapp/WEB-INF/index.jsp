@@ -33,7 +33,7 @@
                     <form:errors path="userName"/>
                     </div>
                     <div class="form-group">
-                    <form:label path="email">Email:</form:label>
+                    <form:label path="email">Email :</form:label>
                     <form:input  class="form-control" path="email"/>
                     <form:errors path="email"/>
                     </div>

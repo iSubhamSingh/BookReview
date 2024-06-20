@@ -61,7 +61,7 @@ public class MainController {
         }
         
         List<Book> books = bookService.getAllBook();
-        //the model send data from DB to the view
+        //the model send data from DB to the view 
         model.addAttribute("books", books);
         return "books/home.jsp";
     }
