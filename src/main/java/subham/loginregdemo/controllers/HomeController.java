@@ -81,4 +81,9 @@ public class HomeController {
         return "redirect:/";
     }
     
+    @GetMapping("/api/books") // api endpoint to get book list(In progress)
+    public String bookList() {
+    	return "";
+    }
+    
 }
