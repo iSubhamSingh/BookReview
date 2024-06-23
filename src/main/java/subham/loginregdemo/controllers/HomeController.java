@@ -86,4 +86,8 @@ public class HomeController {
     	return "";
     }
     
+    @GetMapping("/api/users") // api endpoint to get user list(In progress)
+    public String userList() {
+    	return "";
+    }
 }
