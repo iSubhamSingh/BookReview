@@ -33,7 +33,7 @@ public class Book {
     
     
     @NotNull(message= "Title Required")
-    @Size(min=3, max=100, message = "Title need name")
+    @Size(min=3, max=100, message = "Title is a required field")
     private String title;
     
     @NotNull
@@ -42,7 +42,7 @@ public class Book {
 
 
     @NotNull(message= "Thoughts By is  Required")
-    @Size(min=3, max=245, message = "Must be at least 3 characters")
+    @Size(min=3, max=245, message = "Must be at least 3 characters long")
     private String thoughts;
 
 
